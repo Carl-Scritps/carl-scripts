@@ -11,35 +11,44 @@
 
 	<style>
 	.projects-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  margin-top: 2rem;
-}
-
-.project-card {
-  background: #f4f4f4;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-card h3 a {
-  color: #007acc;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.project-card p {
-  margin-top: 0.5rem;
-  line-height: 1.6;
-}
-
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	  gap: 2rem;
+	  margin-top: 2rem;
+	}
+	.project-card {
+	  background: #ffffff;
+	  padding: 2rem;
+	  border-radius: 12px;
+	  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+	  border-left: 5px solid #007acc;
+	  transition: all 0.3s ease;
+	}
+	.project-card:hover {
+	  transform: translateY(-6px);
+	  border-left: 5px solid #00b894;
+	  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+	}
+	.project-card h3 {
+	  margin-top: 0;
+	  font-size: 1.5rem;
+	  font-weight: 700;
+	  color: #2c3e50;
+	}
+	.project-card h3 a {
+	  text-decoration: none;
+	  color: inherit;
+	  transition: color 0.3s ease;
+	}
+	.project-card h3 a:hover {
+	  color: #00b894;
+	}
+	.project-card p {
+	  font-size: 1rem;
+	  line-height: 1.6;
+	  color: #555;
+	  margin-top: 0.75rem;
+	}
 	</style>
 	<body class="is-preload">
 
@@ -88,37 +97,39 @@
 						    I specialize in <strong>web development</strong>, <strong>IT project management</strong>, and <strong>technology-driven solutions</strong> tailored for education, local governance, and digital innovation. With a commitment to continuous learning and public service, I aim to bridge the gap between modern technology and real-world community impact through practical and scalable IT solutions.
 						  </p>
 						</article>
+					<!-- Projects -->
+					<article id="projects">
+					  <h2 class="major">Website Projects</h2>
+					
+					  <div class="projects-grid">
+					
+					    <!-- Project 1 -->
+					    <section class="project-card">
+					      <h3><a href="https://allsyncsolutions-f6842--carlscripts-sad68vmz.web.app/" target="_blank">AllSync Solutions</a></h3>
+					      <p>A virtual IT service provider committed to delivering high-quality web development solutions to international clients worldwide.</p>
+					    </section>
+					
+					    <!-- Project 2 -->
+					    <section class="project-card">
+					      <h3><a href="https://sulopcris.info/" target="_blank">Sulop eSure</a></h3>
+					      <p>An intelligent community request system that uses machine learning to provide smart local governance services.</p>
+					    </section>
+					
+					    <!-- Project 3 -->
+					    <section class="project-card">
+					      <h3><a href="https://jamex.co.jp/puadmin" target="_blank">JAMEX Auction System</a></h3>
+					      <p>Multilingual machine auction platform for JAMEX Co. Ltd. with inspection reports, admin backend, and mobile responsiveness.</p>
+					    </section>
+					
+					    <!-- Project 4 -->
+					    <section class="project-card">
+					      <h3><a href="#" target="_blank">SmartServe + AI</a></h3>
+					      <p>AI-powered bangus classification system using CNN and ARIMA for sorting and forecasting production volume.</p>
+					    </section>
+					
+					  </div>
+					</article>
 
-						<!-- Projects -->
-						<article id="projects">
-						  <h2 class="major">Website Projects</h2>
-						
-						  <div class="projects-grid">
-
-						
-							  
-						    <!-- Project 2 -->
-						    <section class="project-card">
-						      <h3><a href="https://sulopcris.info/" target="_blank">Sulop eSure</a></h3>
-						      <p>A virtual IT service provider committed to delivering high-quality web development solutions to international clients worldwide.</p>
-						    </section>
-						
-						    <!-- Project 3 -->
-						    <section class="project-card">
-						      <h3><a href="https://jamex.co.jp/puadmin" target="_blank">JAMEX Auction System</a></h3>
-						      <p>Multilingual machine auction platform for JAMEX Co. Ltd. with inspection reports, admin backend, and mobile responsiveness.</p>
-						    </section>
-						
-						    <!-- Project 4 -->
-						    <section class="project-card">
-						      <h3><a href="#" target="_blank">SmartServe + AI </a></h3>
-						      <p>AI-powered bangus classification system using CNN and ARIMA for sorting and forecasting production volume.</p>
-						    </section>
-						
-						    <!-- Add more projects here as needed -->
-						
-						  </div>
-						</article>
 
 
 						<!-- Work -->
