@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>My Portfolio | Full Stack Developer & Instructor</title>
+  <meta content="Full Stack Developer and Educator specializing in web development, system design, and IT education. Building scalable web applications using modern frameworks and technologies." name="description">
+  <meta content="Carlito Rehang, Full Stack Developer, Web Developer, Instructor, PHP Developer, Laravel, React, Portfolio" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/my-profile-img.jpg" rel="icon">
+  <link href="assets/img/my-profile-img.jpg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- Custom Styles for Trainings Section -->
+  <style>
+    .training-item {
+      background: var(--surface-color);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border-left: 3px solid var(--accent-color);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .training-item:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .training-item h4 {
+      font-size: 16px !important;
+      font-weight: 600 !important;
+      text-transform: none !important;
+      line-height: 1.4 !important;
+      margin-bottom: 12px !important;
+      color: var(--heading-color) !important;
+    }
+    .training-item h5 {
+      font-size: 14px !important;
+      padding: 0 !important;
+      margin: 0 15px 0 0 !important;
+      display: inline-block !important;
+      color: var(--accent-color) !important;
+      font-weight: 600 !important;
+    }
+    .training-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-right: 10px;
+    }
+    .badge-technical { background: rgba(0, 122, 204, 0.1); color: #007acc; }
+    .badge-managerial { background: rgba(34, 197, 94, 0.1); color: #22c55e; }
+    .badge-supervisory { background: rgba(168, 85, 247, 0.1); color: #a855f7; }
+    .training-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .training-item p {
+      margin: 0 !important;
+      color: color-mix(in srgb, var(--default-color), transparent 30%) !important;
+      font-size: 13px !important;
+    }
+    .training-hours {
+      color: color-mix(in srgb, var(--default-color), transparent 40%);
+      font-size: 13px;
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Carl-Scripts</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.facebook.com/ScriptsPHPCarl" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://github.com/Carl23-Rehang" target="_blank" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://wa.me/639652952596" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Carlito Jr. M. Rehang</h2>
+        <p>I'm <span class="typed" data-typed-items="Full Stack Developer, Educator, Web Developer, Instructor">Full Stack Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>I am a dedicated and results-driven web developer with over six years of experience in building responsive, user-focused websites and web applications. My expertise spans front-end and back-end development, with a strong foundation in modern frameworks, clean coding practices, and performance optimization.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Full Stack Developer &amp; Educator</h2>
+            <p class="fst-italic py-3">
+              Passionate Full Stack Developer and Educator based in Digos City, Davao del Sur. I bring together the power of design, development, and digital strategy to build functional and visually compelling web applications.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Digos City, Davao del Sur, Philippines</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Current Position:</strong> <span>Web Developer & Instructor</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Institution:</strong> <span>Davao del Sur State College</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Department:</strong> <span>College of Computing, Engineering and Technology</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>BSIT (SPAMAST), MIT Ongoing (USeP)</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Specialization:</strong> <span>Web Development, IT Education</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Experience:</strong> <span>5+ years</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Status:</strong> <span>Available for Projects</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              Bachelor's degree in Information Technology graduate with 5+ years of freelancing experience in web development. I build fast, responsive, and user-focused websites—from custom systems to international platforms—optimized for performance, security, and scalability.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> <span>satisfied with quality work</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="45" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> <span>successfully delivered</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="2400" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> <span>dedicated service hours</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> <span>dedicated team members</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Proficient in modern web development technologies and frameworks, with expertise in building scalable, responsive, and high-performance applications.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Photoshop</span> <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+        <!-- Technology Tags -->
+        <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-12">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;">
+              <span style="background: #f1f5f9; color: #007acc; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.875rem;">Laravel</span>
+              <span style="background: #f1f5f9; color: #007acc; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.875rem;">React</span>
+              <span style="background: #f1f5f9; color: #007acc; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.875rem;">Tailwind</span>
+              <span style="background: #f1f5f9; color: #007acc; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.875rem;">MySQL</span>
+              <span style="background: #f1f5f9; color: #007acc; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.875rem;">Firebase</span>
+              <span style="background: #f1f5f9; color: #007acc; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.875rem;">Node.js</span>
+              <span style="background: #f1f5f9; color: #007acc; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.875rem;">GitHub</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Comprehensive overview of professional experience, education, technical skills, and key achievements in web development and IT education.</p>
+        <div style="text-align: center; margin-top: 20px;">
+          <a href="Carlito-Rehang-CV.html" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 30px; background-color: #007acc; color: white; text-decoration: none; border-radius: 5px; font-weight: 600; transition: background-color 0.3s;">
+            <i class="bi bi-download"></i> Download CV
+          </a>
+        </div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Carlito Jr. M. Rehang</h4>
+              <p><em>Passionate Full Stack Developer and Educator with extensive experience in web development, system design, and IT education. Specializes in building scalable web applications using modern frameworks and technologies, while contributing to academic excellence through teaching and research.</em></p>
+              <ul>
+                <li>Digos City, Davao del Sur, Philippines</li>
+                <li>Instructor 1, College of Computing, Engineering and Technology</li>
+                <li>Davao del Sur State College</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master in Information Technology</h4>
+              <h5>Ongoing</h5>
+              <p><em>University of Southeastern Philippines (USeP)</em></p>
+              <p>Currently pursuing advanced studies in Information Technology to enhance expertise in modern technologies and research methodologies.</p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>Bachelor of Science in Information Technology</h4>
+              <h5>Graduated</h5>
+              <p><em>Southern Philippines Agri-Business and Marine and Aquatic School of Technology (SPAMAST)</em></p>
+              <p>Foundation in information technology, web development, and computer systems that laid the groundwork for a career in IT development and education.</p>
+            </div><!-- End Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Web Developer/Instructor</h4>
+              <h5>Sep 2023 - Present</h5>
+              <p><em>College of Computing, Engineering and Technology, Davao del Sur State College</em></p>
+              <p style="margin-bottom: 10px;"><strong>Immediate Supervisor:</strong> Eduardo F. Aquino, MSME</p>
+              <ul>
+                <li>Delivers lectures and lab activities in IT and Computing</li>
+                <li>Evaluates student performance and mentors students in academics and system development</li>
+                <li>Contributes to curriculum development</li>
+                <li>Developed and delivered course materials in Computing and IT-related subjects</li>
+                <li>Participated in research projects initiatives of the department</li>
+                <li>Helped organize department activities (hackathons, IT seminars)</li>
+                <li>Participates in departmental activities and undertakes research, extension, and administrative functions</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>Web Developer</h4>
+              <h5>Mar 2021 - Sep 2023</h5>
+              <p><em>Davao del Sur State College</em></p>
+              <p style="margin-bottom: 10px;"><strong>Immediate Supervisor:</strong> Rosedilla Janson, MLIS</p>
+              <ul>
+                <li>Designed, developed, and maintained web applications and the official college website</li>
+                <li>Managed databases and online systems to support academic and administrative services</li>
+                <li>Streamlined online services for students and staff (e.g., enrollment, records management, and announcements)</li>
+                <li>Assisted in the digital transformation initiatives of the college, including system upgrades and database management</li>
+                <li>Provided technical support and troubleshooting for web-based platforms</li>
+                <li>Contributed to IT-related trainings, orientations, and knowledge-sharing sessions for faculty and staff</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>Scholarship/UniFAST Staff</h4>
+              <h5>Aug 2018 - Dec 2020</h5>
+              <p><em>Scholarship Office, Southern Philippines Agri-Business and Marine and Aquatic School of Technology</em></p>
+              <p style="margin-bottom: 10px;"><strong>Immediate Supervisor:</strong> Sheryll Mae P. Carbajosa, MPSych.</p>
+              <ul>
+                <li>Facilitated scholarship application processing</li>
+                <li>Maintained and organized beneficiary records</li>
+                <li>Assisted in the preparation of financial and administrative reports</li>
+                <li>Contributed to the digitalization of records and preparation of reports for UniFAST implementation</li>
+                <li>Coordinated with students and offices regarding UniFAST concerns</li>
+                <li>Supported students by providing guidance on scholarship applications and compliance requirements</li>
+                <li>Performed other related administrative tasks</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+          </div>
+
+        </div>
+
+        <!-- Trainings and Certificates Section -->
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="resume-title">Trainings and Certificates</h3>
+            
+            <div class="resume-item" style="background: var(--surface-color); padding: 20px; margin-bottom: 20px; border-radius: 5px; border-left: 3px solid var(--accent-color); box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+              <h4 style="font-size: 16px; margin-bottom: 10px; line-height: 1.4;">User Training on the Enhanced Features of the MangoMo Application Mango Tayo! Program Phase 2</h4>
+              <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 8px; align-items: center;">
+                <h5 style="margin: 0; padding: 0;">Jul 2025</h5>
+                <span style="background: rgba(0, 122, 204, 0.1); color: #007acc; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: 600; text-transform: uppercase;">Technical</span>
+                <span style="color: color-mix(in srgb, var(--default-color), transparent 40%); font-size: 13px;">8 hours</span>
+              </div>
+              <p style="margin: 0; color: color-mix(in srgb, var(--default-color), transparent 30%); font-size: 13px;"><em>Davao del Sur State College</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>BUGSAI TBI Provincial Roadshow - Davao del Sur leg</h4>
+              <div class="training-meta">
+                <h5>Apr 2025</h5>
+                <span class="training-badge badge-managerial">Managerial</span>
+                <span class="training-hours">8 hours</span>
+              </div>
+              <p><em>Davao del Sur State College</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>Virtual Orientation for Science Direct Access</h4>
+              <div class="training-meta">
+                <h5>Apr 2025</h5>
+                <span class="training-badge badge-technical">Technical</span>
+                <span class="training-hours">8 hours</span>
+              </div>
+              <p><em>Google Meet</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>Post Management Strategies for Sustainable Mango Production and MangoMo Advance Features User Training</h4>
+              <div class="training-meta">
+                <h5>Feb 2025</h5>
+                <span class="training-badge badge-technical">Technical</span>
+                <span class="training-hours">8 hours</span>
+              </div>
+              <p><em>Davao del Sur State College</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>Effective use of Tools and Branding Strategies for Capstone Project Startups</h4>
+              <div class="training-meta">
+                <h5>Jan 2025</h5>
+                <span class="training-badge badge-managerial">Managerial</span>
+                <span class="training-hours">24 hours</span>
+              </div>
+              <p><em>Hotel de Crisbelle, Digos City</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>ICT Literacy Training for Barangay Secretaries and Treasurers</h4>
+              <div class="training-meta">
+                <h5>Nov 2024</h5>
+                <span class="training-badge badge-technical">Technical</span>
+                <span class="training-hours">8 hours</span>
+              </div>
+              <p><em>Davao del Sur State College</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>The Blockchain Campus Conference 2024</h4>
+              <div class="training-meta">
+                <h5>Oct 2024</h5>
+                <span class="training-badge badge-technical">Technical</span>
+                <span class="training-hours">16 hours</span>
+              </div>
+              <p><em>Solana Super Team</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>Hands-On IoT: "From Concept to Creation" Training for Grade 12 students</h4>
+              <div class="training-meta">
+                <h5>Sep 2024</h5>
+                <span class="training-badge badge-technical">Technical</span>
+                <span class="training-hours">16 hours</span>
+              </div>
+              <p><em>Sulop National High School Senior High School</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>MikroTik Certified Routing Engineer</h4>
+              <div class="training-meta">
+                <h5>Aug 2024</h5>
+                <span class="training-badge badge-technical">Technical</span>
+                <span class="training-hours">8 hours</span>
+              </div>
+              <p><em>MikroTik Philippines</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>MikroTik Certified User Management Engineer</h4>
+              <div class="training-meta">
+                <h5>Aug 2024</h5>
+                <span class="training-badge badge-technical">Technical</span>
+                <span class="training-hours">4 hours</span>
+              </div>
+              <p><em>MikroTik Philippines</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>MikroTik Certified Network Associate</h4>
+              <div class="training-meta">
+                <h5>Aug 2024</h5>
+                <span class="training-badge badge-technical">Technical</span>
+                <span class="training-hours">8 hours</span>
+              </div>
+              <p><em>MikroTik Philippines</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>Trainers Training with MikroTik Certified Academy Trainers (MTCAT) Course</h4>
+              <div class="training-meta">
+                <h5>Aug 2024</h5>
+                <span class="training-badge badge-supervisory">Supervisory</span>
+                <span class="training-hours">40 hours</span>
+              </div>
+              <p><em>Davao del Sur State College</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>Physical, Psychological, and Moral Practices toward Organizational Resilience and Sustainability</h4>
+              <div class="training-meta">
+                <h5>Sep 2023</h5>
+                <span class="training-badge badge-managerial">Managerial</span>
+                <span class="training-hours">8 hours</span>
+              </div>
+              <p><em>Davao del Sur State College</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>Human Resource Information Capability Training</h4>
+              <div class="training-meta">
+                <h5>May 2023</h5>
+                <span class="training-badge badge-managerial">Managerial</span>
+                <span class="training-hours">24 hours</span>
+              </div>
+              <p><em>Davao Oriental State University</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>Human Resource and Management Information System</h4>
+              <div class="training-meta">
+                <h5>Mar 2023</h5>
+                <span class="training-badge badge-managerial">Managerial</span>
+                <span class="training-hours">8 hours</span>
+              </div>
+              <p><em>National Economic and Development Authority XI - Davao City</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>HRMIS Web Developer, DSSC - Information and Communication Technology Center</h4>
+              <div class="training-meta">
+                <h5>Mar 2023</h5>
+                <span class="training-badge badge-technical">Technical</span>
+                <span class="training-hours">8 hours</span>
+              </div>
+              <p><em>Davao del Sur State College</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>Learning Management System Version 2</h4>
+              <div class="training-meta">
+                <h5>Feb 2022</h5>
+                <span class="training-badge badge-technical">Technical</span>
+                <span class="training-hours">16 hours</span>
+              </div>
+              <p><em>Davao del Sur State College</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>Training Methodology 1</h4>
+              <div class="training-meta">
+                <h5>Jul 2019</h5>
+                <span class="training-badge badge-supervisory">Supervisory</span>
+                <span class="training-hours">40 hours</span>
+              </div>
+              <p><em>Southern Philippines Agribusiness and Marine and Aquatic School of Technology</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>Computer System Servicing Certificate Appreciation as Judge, during Division Technolympics 2018</h4>
+              <div class="training-meta">
+                <h5>Dec 2018</h5>
+                <span class="training-badge badge-technical">Technical</span>
+                <span class="training-hours">3.3 hours</span>
+              </div>
+              <p><em>Heraclero Casco Memorial National High School, Sta. Maria Davao Occidental</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>On-The-Job-Training Certificate</h4>
+              <div class="training-meta">
+                <h5>Jan 2018 - Mar 2018</h5>
+                <span class="training-badge badge-supervisory">Supervisory</span>
+                <span class="training-hours">320 hours</span>
+              </div>
+              <p><em>Inquirinity Corporation</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>Advance Computer Networks and Data Communication Seminar</h4>
+              <div class="training-meta">
+                <h5>Sep 2016</h5>
+                <span class="training-badge badge-technical">Technical</span>
+                <span class="training-hours">8 hours</span>
+              </div>
+              <p><em>Inquirinity Corporation</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>Earthquake Drill</h4>
+              <div class="training-meta">
+                <h5>Jun 2016</h5>
+                <span class="training-badge badge-technical">Technical</span>
+                <span class="training-hours">16 hours</span>
+              </div>
+              <p><em>Southern Philippines Agribusiness and Marine and Aquatic School of Technology</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item training-item">
+              <h4>How the Seagrass and Mangrove Research Project outputs Benefits the Development Sectors of the Municipality of Malita</h4>
+              <div class="training-meta">
+                <h5>May 2016</h5>
+                <span class="training-badge badge-technical">Technical</span>
+                <span class="training-hours">8 hours</span>
+              </div>
+              <p><em>Southern Philippines Agribusiness and Marine and Aquatic School of Technology</em></p>
+            </div><!-- End Resume Item -->
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>A collection of web applications and digital systems I've developed, showcasing expertise in full-stack development, system architecture, and innovative solutions for education, governance, and business.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Web Applications</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-1.png" class="img-fluid" alt="AllSync Solutions">
+                <div class="portfolio-info">
+                  <h4>AllSync Solutions</h4>
+                  <p>A virtual IT service provider committed to delivering high-quality web development solutions to international clients worldwide.</p>
+                  <a href="https://allsyncsolutions-f6842--preview-1234-3auhfkfu.web.app/contact/" title="AllSync Solutions" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-2.png" class="img-fluid" alt="BORO-W Wing System">
+                <div class="portfolio-info">
+                  <h4>BORO-W Wing System</h4>
+                  <p>Online library borrowing and monitoring system for DSSC Library's digital resources and physical lending.</p>
+                  <a href="https://borowwingsystem.dssclibrary.net/login" title="BORO-W Wing System" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-3.png" class="img-fluid" alt="DSSC Institutional Repository">
+                <div class="portfolio-info">
+                  <h4>DSSC Institutional Repository</h4>
+                  <p>Open-access academic repository showcasing research outputs, publications, and institutional archives of DSSC.</p>
+                  <a href="https://repository.dssc.edu.ph/" title="DSSC Institutional Repository" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-1.png" class="img-fluid" alt="DSSC Learning Resource Center">
+                <div class="portfolio-info">
+                  <h4>DSSC Learning Resource Center</h4>
+                  <p>Centralized portal for DSSC's digital learning resources, eBooks, references, and academic tools.</p>
+                  <a href="https://lrc.dssc.edu.ph/" title="DSSC Learning Resource Center" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-2.png" class="img-fluid" alt="eGoodGov – Sulop eGovernance Portal">
+                <div class="portfolio-info">
+                  <h4>eGoodGov – Sulop eGovernance Portal</h4>
+                  <p>Electronic governance platform for streamlined citizen requests, records, and public service transactions in Sulop LGU.</p>
+                  <a href="https://egoodgov.sulopcris.info/login" title="eGoodGov – Sulop eGovernance Portal" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-3.png" class="img-fluid" alt="JAMEX Auction System">
+                <div class="portfolio-info">
+                  <h4>JAMEX Auction System</h4>
+                  <p>Multilingual machine auction platform for JAMEX Co. Ltd. with inspection reports, admin backend, and mobile responsiveness.</p>
+                  <a href="https://jamex.co.jp/puadmin" title="JAMEX Auction System" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-1.png" class="img-fluid" alt="READ Portal">
+                <div class="portfolio-info">
+                  <h4>READ Portal</h4>
+                  <p>The Davao del Sur State College (DDSC) Library is a hub of academic excellence and innovation, empowering learners through inclusive access to knowledge and transformative learning.</p>
+                  <a href="https://read.dssclibrary.net/index.php" title="READ Portal" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-2.png" class="img-fluid" alt="SmartServe + AI">
+                <div class="portfolio-info">
+                  <h4>eGoodGov – Sulop eGovernance Portal</h4>
+                  <p>Electronic governance platform for streamlined citizen requests, records, and public service transactions in Sulop LGU.</p>
+                  <a href="https://egoodgov.sulopcris.info/login" title="eGoodGov – Sulop eGovernance Portal" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-3.png" class="img-fluid" alt="Sulop eSure">
+                <div class="portfolio-info">
+                  <h4>Library Appointment System</h4>
+                  <p>A scheduled appointment system for library services in DSSC Library.</p>
+                  <a href="https://read.dssclibrary.net/public_appointment.php" title="Library Appointment System" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-1.png" class="img-fluid" alt="Clearance for Enrollment Appointment">
+                <div class="portfolio-info">
+                  <h4>Clearance for Enrollment Appointment</h4>
+                  <p>Web-based system used in DSSC for Request library clearance for enrollment.</p>
+                  <a href="https://read.dssclibrary.net/claims_form.php" title="Clearance for Enrollment Appointment" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>I take pride in delivering high-quality digital solutions that meet client needs and industry standards. My approach combines technical proficiency with creative problem-solving, ensuring each project is efficient, functional, and aligned with the latest trends in web development.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Web Development</a></h4>
+              <p class="description">Full-stack web development using modern frameworks like React, Laravel, and Node.js to build scalable and responsive web applications.</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-database"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">System Development</a></h4>
+              <p class="description">Custom system development for academic, administrative, and business processes with database design and management.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-mortarboard"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">IT Education & Training</a></h4>
+              <p class="description">Teaching and training in IT and Computing, curriculum development, and technical workshops for students and professionals.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-tools"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Technical Support</a></h4>
+              <p class="description">Technical support and troubleshooting for web-based platforms, system maintenance, and digital transformation initiatives.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-search"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Research & Development</a></h4>
+              <p class="description">Engagement in research projects, system innovation, and development of AI-powered solutions for various industries.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Consulting Services</a></h4>
+              <p class="description">IT consulting for digital transformation, system architecture, and technology solutions tailored to client needs.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Feedback and recommendations from colleagues, clients, and collaborators who have worked with me on various projects and initiatives.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Carl has been an exceptional web developer who consistently delivers high-quality solutions. His expertise in full-stack development and attention to detail have been instrumental in our digital transformation projects at DSSC.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Eduardo F. Aquino</h3>
+                <h4>MSME, Immediate Supervisor</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>As an educator, Carl brings both technical expertise and pedagogical skill to the classroom. His students benefit greatly from his real-world experience in web development and system design.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>College of Computing</h3>
+                <h4>DSSC Faculty Colleague</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Carl's web development services have helped streamline our operations significantly. His ability to understand our needs and translate them into functional, user-friendly systems is truly commendable.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Project Client</h3>
+                <h4>eGovernance Portal</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Carl's dedication to continuous learning and professional development is evident in his work. He stays current with modern technologies and best practices, making him a valuable asset to any project.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Professional Colleague</h3>
+                <h4>IT Industry</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Get in touch with me for project collaborations, consultations, or any inquiries. I'm always open to discussing new opportunities and innovative projects.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Digos City, Davao del Sur, Philippines</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+63 965 295 2596</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>allsyncsolutionsofficial@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.5!2d125.3529848!3d6.745456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f9ae91bc37d687%3A0x24f99d78a94236fc!2sDigos%2C%20Davao%20del%20Sur!5e0!3m2!1sen!2sph!4v1704672000000!5m2!1sen!2sph" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1">Carlito Jr. M. Rehang</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

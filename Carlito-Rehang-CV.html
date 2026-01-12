@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlito Rehang - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #007acc;
+        }
+        
+        h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        
+        h2 {
+            font-size: 18px;
+            color: #007acc;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+        
+        .contact-info span {
+            color: #555;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #007acc;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        
+        .summary {
+            text-align: justify;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+        
+        .job-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .company {
+            font-size: 14px;
+            color: #007acc;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+        
+        .supervisor {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 3px;
+        }
+        
+        .duration {
+            font-size: 13px;
+            color: #888;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .duties-summary {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .skill-item {
+            font-size: 13px;
+        }
+        
+        .skill-name {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .certification-item {
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+        
+        .cert-title {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .training-list {
+            column-count: 2;
+            column-gap: 20px;
+        }
+        
+        .training-list li {
+            margin-bottom: 8px;
+        }
+        
+        .project-item {
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+        
+        .project-name {
+            font-weight: 600;
+            color: #007acc;
+        }
+        
+        .project-url {
+            color: #666;
+            font-size: 12px;
+        }
+        
+        @media print {
+            body {
+                padding: 10px;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+            .experience-item {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CARLITO JR. M. REHANG</h1>
+            <h2>Full Stack Developer & IT Educator</h2>
+            <div class="contact-info">
+                <span>📍 Digos City, Davao del Sur, Philippines</span>
+                <span>📞 +63 965 295 2596</span>
+                <span>✉️ allsyncsolutionsofficial@gmail.com</span>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="section-title">Professional Summary</div>
+            <div class="summary">
+                Bachelor's degree in Information Technology graduate with 5+ years of Website/System Developer experience. Innovative and deadline-driven Full Stack Developer with extensive experience designing and developing user-centered web applications from initial concept to final, polished deliverable. I build fast, responsive, and user-focused websites—from custom systems to international platforms—optimized for performance, security, and scalability. Currently serving as Instructor 1 at Davao del Sur State College, combining technical expertise with educational excellence.
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">Professional Experience</div>
+            
+            <div class="experience-item">
+                <div class="job-title">Web Developer/Instructor</div>
+                <div class="company">College of Computing, Engineering and Technology</div>
+                <div class="company">Davao del Sur State College</div>
+                <div class="supervisor">Immediate Supervisor: Eduardo F. Aquino, MSME</div>
+                <div class="duration">Sep 2023 - Present</div>
+                <div class="duties-summary"><strong>Summary of Actual Duties:</strong> Delivers lectures and lab activities in IT and Computing, evaluates student performance, mentors students in academics and system development, contributes to curriculum development, participates in departmental activities, and undertakes research, extension, and administrative functions.</div>
+                <ul>
+                    <li>Developed and delivered course materials in Computing and IT-related subjects</li>
+                    <li>Delivered lectures and lab activities in IT and Computing</li>
+                    <li>Evaluated student performance and mentored students in academics and system development</li>
+                    <li>Contributed to curriculum development and participated in departmental activities</li>
+                    <li>Participated in research project initiatives of the department</li>
+                    <li>Helped organize department activities (hackathons, IT seminars)</li>
+                    <li>Undertook research, extension, and administrative functions</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Web Developer</div>
+                <div class="company">Davao del Sur State College</div>
+                <div class="supervisor">Immediate Supervisor: Rosedilla Janson, MLIS</div>
+                <div class="duration">Mar 2021 - Sep 2023</div>
+                <div class="duties-summary"><strong>Summary of Actual Duties:</strong> Designs, develops, and maintains web applications and the official college website; manages databases and online systems to support academic and administrative services; provides technical support and troubleshooting for web-based platforms; assists in implementing digital transformation initiatives; and participates in IT-related trainings and departmental activities.</div>
+                <ul>
+                    <li>Developed, maintained, and enhanced the official college website and internal web applications</li>
+                    <li>Streamlined online services for students and staff (enrollment, records management, announcements)</li>
+                    <li>Assisted in digital transformation initiatives including system upgrades and database management</li>
+                    <li>Designed, developed, and maintained web applications and the official college website</li>
+                    <li>Managed databases and online systems to support academic and administrative services</li>
+                    <li>Provided technical support and troubleshooting for web-based platforms</li>
+                    <li>Contributed to IT-related trainings, orientations, and knowledge-sharing sessions for faculty and staff</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Scholarship/UniFAST Staff</div>
+                <div class="company">Scholarship Office</div>
+                <div class="company">Southern Philippines Agri-Business and Marine and Aquatic School of Technology (SPAMAST)</div>
+                <div class="supervisor">Immediate Supervisor: Sheryll Mae P. Carbajosa, MPSych.</div>
+                <div class="duration">Aug 2018 - Dec 2020</div>
+                <div class="duties-summary"><strong>Summary of Actual Duties:</strong> Facilitates scholarship application processing, maintains and organizes beneficiary records, assists in the preparation of financial and administrative reports, coordinates with students and offices regarding UniFAST concerns, and performs other related administrative tasks.</div>
+                <ul>
+                    <li>Assisted in processing and documentation of scholarship and financial assistance programs</li>
+                    <li>Contributed to digitalization of records and preparation of reports for UniFAST implementation</li>
+                    <li>Supported students by providing guidance on scholarship applications and compliance requirements</li>
+                    <li>Facilitated scholarship application processing and maintained beneficiary records</li>
+                    <li>Assisted in preparation of financial and administrative reports</li>
+                    <li>Coordinated with students and offices regarding UniFAST concerns</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">Education</div>
+            
+            <div class="education-item">
+                <div class="job-title">Master in Information Technology</div>
+                <div class="company">University of Southeastern Philippines (USeP)</div>
+                <div class="duration">Pursuing</div>
+                <div style="font-size: 13px; margin-top: 5px;">Currently advancing expertise in information technology and systems development to stay at the forefront of technological innovation.</div>
+            </div>
+
+            <div class="education-item">
+                <div class="job-title">Bachelor of Science in Information Technology</div>
+                <div class="company">Southern Philippines Agri-Business and Marine and Aquatic School of Technology (SPAMAST)</div>
+                <div class="duration">Graduated</div>
+                <div style="font-size: 13px; margin-top: 5px;">Foundation in computer science, programming, and information systems with focus on web development and database management.</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-grid">
+                <div class="skill-item"><span class="skill-name">Laravel</span> - 90%</div>
+                <div class="skill-item"><span class="skill-name">PHP</span> - 90%</div>
+                <div class="skill-item"><span class="skill-name">React</span> - 85%</div>
+                <div class="skill-item"><span class="skill-name">MySQL</span> - 85%</div>
+                <div class="skill-item"><span class="skill-name">JavaScript</span> - 88%</div>
+                <div class="skill-item"><span class="skill-name">Node.js</span> - 75%</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">Certifications & Professional Development</div>
+            
+            <div class="certification-item">
+                <div class="cert-title">MikroTik Network Certifications</div>
+                <div style="font-size: 12px; color: #666; margin-bottom: 5px;">MikroTik Philippines | MikroTikls SIA, Latvia</div>
+                <ul style="margin-top: 5px;">
+                    <li>MTCNA (MikroTik Certified Network Associate)</li>
+                    <li>MTCUME (MikroTik Certified User Management Engineer)</li>
+                    <li>MTCRE (MikroTik Certified Routing Engineer)</li>
+                    <li>MTCAT (Trainers Training with MikroTik Certified Academy Trainers)</li>
+                </ul>
+            </div>
+
+            <div class="certification-item" style="margin-top: 20px;">
+                <div class="cert-title">Professional Development & Training (2016 - 2025)</div>
+                <ul class="training-list" style="margin-top: 10px;">
+                    <li>User Training on Enhanced Features of MangoMo Application - Mango Tayo! Program Phase 2</li>
+                    <li>BUGSAI TBI Provincial Roadshow - Davao del Sur leg</li>
+                    <li>Virtual Orientation for Science Direct Access</li>
+                    <li>Post Management Strategies for Sustainable Mango Production and MangoMo Advance Features User Training</li>
+                    <li>ICT Literacy Training for Barangay Secretaries and Treasurers</li>
+                    <li>The Blockchain Campus Conference 2024</li>
+                    <li>Hands-On IoT: "From Concept to Creation" Training for Grade 12 students</li>
+                    <li>Physical, Psychological, and Moral Practices toward Organizational Resilience and Sustainability</li>
+                    <li>Human Resource Information Capability Training</li>
+                    <li>Human Resource and Management Information System (HRMIS) Web Developer Training</li>
+                    <li>Learning Management System Version 2 Training</li>
+                    <li>Training Methodology 1</li>
+                    <li>Advance Computer Networks and Data Communication Seminar</li>
+                </ul>
+            </div>
+
+            <div class="certification-item" style="margin-top: 20px;">
+                <div class="cert-title">Additional Achievements</div>
+                <ul style="margin-top: 10px;">
+                    <li>Computer System Servicing Certificate Appreciation as Judge, during Division Technolympics 2018</li>
+                    <li>On-The-Job-Training Certificate</li>
+                    <li>HRMIS Web Developer, DSSC - Information and Communication Technology Center</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">Key Projects</div>
+            <div class="project-item">
+                <div class="project-name">AllSync Solutions</div>
+                <div style="font-size: 12px; margin-bottom: 3px;">A virtual IT service provider committed to delivering high-quality web development solutions to international clients worldwide.</div>
+                <div class="project-url">https://allsyncsolutions-f6842--preview-1234-3auhfkfu.web.app/contact/</div>
+            </div>
+            <div class="project-item">
+                <div class="project-name">BORO-W Wing System</div>
+                <div style="font-size: 12px; margin-bottom: 3px;">Online library borrowing and monitoring system for DSSC Library's digital resources and physical lending.</div>
+                <div class="project-url">https://borowwingsystem.dssclibrary.net/login</div>
+            </div>
+            <div class="project-item">
+                <div class="project-name">DSSC Institutional Repository</div>
+                <div style="font-size: 12px; margin-bottom: 3px;">Open-access academic repository showcasing research outputs, publications, and institutional archives of DSSC.</div>
+                <div class="project-url">https://repository.dssc.edu.ph/</div>
+            </div>
+            <div class="project-item">
+                <div class="project-name">DSSC Learning Resource Center</div>
+                <div style="font-size: 12px; margin-bottom: 3px;">Centralized portal for DSSC's digital learning resources, eBooks, references, and academic tools.</div>
+                <div class="project-url">https://lrc.dssc.edu.ph/</div>
+            </div>
+            <div class="project-item">
+                <div class="project-name">eGoodGov – Sulop eGovernance Portal</div>
+                <div style="font-size: 12px; margin-bottom: 3px;">Electronic governance platform for streamlined citizen requests, records, and public service transactions in Sulop LGU.</div>
+                <div class="project-url">https://egoodgov.sulopcris.info/login</div>
+            </div>
+            <div class="project-item">
+                <div class="project-name">JAMEX Auction System</div>
+                <div style="font-size: 12px; margin-bottom: 3px;">Multilingual machine auction platform for JAMEX Co. Ltd. with inspection reports, admin backend, and mobile responsiveness.</div>
+                <div class="project-url">https://jamex.co.jp/puadmin</div>
+            </div>
+            <div class="project-item">
+                <div class="project-name">READ Portal</div>
+                <div style="font-size: 12px; margin-bottom: 3px;">The Davao del Sur State College (DDSC) Library is a hub of academic excellence and innovation, empowering learners through inclusive access to knowledge and transformative learning.</div>
+                <div class="project-url">https://read.dssclibrary.net/index.php</div>
+            </div>
+            <div class="project-item">
+                <div class="project-name">Library Appointment System</div>
+                <div style="font-size: 12px; margin-bottom: 3px;">A scheduled appointment system for library services in DSSC Library.</div>
+                <div class="project-url">https://read.dssclibrary.net/public_appointment.php</div>
+            </div>
+            <div class="project-item">
+                <div class="project-name">Clearance for Enrollment Appointment</div>
+                <div style="font-size: 12px; margin-bottom: 3px;">Web-based system used in DSSC for Request library clearance for enrollment.</div>
+                <div class="project-url">https://read.dssclibrary.net/claims_form.php</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
